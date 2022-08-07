@@ -1,10 +1,7 @@
 // Add imports above this line
-
-// Change code below this line
+import { galleryItems } from './gallery-items.js';
 import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
 import "simplelightbox/dist/simple-lightbox.min.css"; 
-import { galleryItems } from './gallery-items.js';
-
 
 
 const imagesGallary = document.querySelector(".gallery");
@@ -30,7 +27,6 @@ function creatGallary(galleryItems) {
     .join('');
 
 };
-
    let gallery = new SimpleLightbox('.gallery a', {
    captionData: 'alt',
    captionType: 'attr',
