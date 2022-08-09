@@ -3,7 +3,6 @@ import { galleryItems } from './gallery-items.js';
 import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
 import "simplelightbox/dist/simple-lightbox.min.css"; 
 
-
 const imagesGallary = document.querySelector(".gallery");
 const  imagesMarkup = creatGallary(galleryItems);
 imagesGallary.insertAdjacentHTML('beforeend', imagesMarkup);
@@ -28,8 +27,8 @@ function creatGallary(galleryItems) {
 
 };
    let gallery = new SimpleLightbox('.gallery a', {
-   captionData: 'alt',
-   captionType: 'attr',
-	 captionDelay: 250,
+    captionData: 'alt',
+    captionType: 'attr',
+	  captionDelay: 250,
 });
     gallery.on('show.simplelightbox');
